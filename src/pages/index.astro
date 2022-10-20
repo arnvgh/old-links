@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 import { profile, header, socials } from "../data";
 ---
 
@@ -9,9 +9,48 @@ import { profile, header, socials } from "../data";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{profile.name} | Links 🔗</title>
-  </head>
+    <!-- HTML Meta Tags -->
+    <title>Arunava Ghosh</title>
+    <meta name="description" content="A place to put my thoughts in writing" />
 
-  <style></style>
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Arunava Ghosh" />
+    <meta
+      itemprop="description"
+      content="A place to put my thoughts in writing"
+    />
+    <meta
+      itemprop="image"
+      content="http://arunava.tech/static/images/socialbg.png"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.arunava.tech" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arunava Ghosh" />
+    <meta
+      property="og:description"
+      content="A place to put my thoughts in writing"
+    />
+    <meta
+      property="og:image"
+      content="http://arunava.tech/static/images/socialbg.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arunava Ghosh" />
+    <meta
+      name="twitter:description"
+      content="A place to put my thoughts in writing"
+    />
+    <meta
+      name="twitter:image"
+      content="http://arunava.tech/static/images/socialbg.png"
+    />
+
+    <style></style>
+  </head>
 
   <body class="bg-zinc-900 text-white">
     <div class="max-w-7xl mx-auto">
@@ -91,8 +130,14 @@ import { profile, header, socials } from "../data";
           ))
         }
 
-        <p class="pt-8 text-sm"> Made with 🍀 by <a class="font-bold underline-offset-4" href="https://github.com/its-ag/linkzia"> Arunava </a> </p>
-        
+        <p class="pt-8 text-sm">
+          Made with 🍀 by <a
+            class="font-bold underline-offset-4"
+            href="https://github.com/its-ag/linkzia"
+          >
+            Arunava
+          </a>
+        </p>
       </div>
     </div>
   </body>

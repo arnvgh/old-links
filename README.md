@@ -3,7 +3,7 @@
 
 ![linkzia](https://user-images.githubusercontent.com/102473837/197008496-60dc8285-8416-4118-a89e-e90e210b31e8.png)
 
-### LinkZia is a links manager 🔗 , built with the [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com/) .
+### LinkZia is a links manager 🔗, built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com/) .
 
 
 # Ussage
