@@ -1,0 +1,99 @@
+---
+import { Icon } from 'astro-icon'
+import { profile, header, socials } from "../data";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{profile.name} | Links 🔗</title>
+  </head>
+
+  <style></style>
+
+  <body class="bg-zinc-900 text-white">
+    <div class="max-w-7xl mx-auto">
+      <div>
+        <figure class="p-6">
+          <img
+            class="w-32 h-32 rounded-full mx-auto border-solid border-2 border-sky-500"
+            src={profile.avatar}
+            alt="profile picture"
+            width="400"
+            height="400"
+          />
+          <div class="pt-5 text-center space-y-1">
+            <figcaption class="font-medium">
+              <div class="text-xl font-bold">
+                {profile.name}
+              </div>
+            </figcaption>
+            <blockquote>
+              <p class="text-lg font-normal">
+                {profile.bio}
+              </p>
+            </blockquote>
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <div class="max-w-xs mx-auto">
+      <div class="pt-0 text-center space-y-4">
+        {
+          header.map((link) => (
+            <a
+              href={link.url}
+              target="_blank"
+              class="flex items-start rounded-lg border border-gray-400 bg-zinc-800 px-5 py-4 text-lg leading-6 font-medium shadow-md hover:scale-[1.12] duration-300 ease-in-out"
+            >
+              <p class="mr-auto h-6 w-6">
+                {" "}
+                <img src={link.icon} alt="" />{" "}
+              </p>
+              {link.text}
+              <div class="ml-auto mt-0.5 pl-4">
+                <svg
+                  class="h-5 w-5 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+            </a>
+          ))
+        }
+
+        <details>
+          <summary class="cursor-help font-bold border-double">🎁</summary>
+          <p>Never Gonna Give You Up 😂</p>
+        </details>
+
+        <p class="font-bold">Other ways to connect with me 👇</p>
+
+        {
+          socials.map((link) => (
+            <a
+              class="px-4 py-2 font-semibold text-white inline-flex items-center space-x-10 rounded-full hover:scale-[1.15] duration-300 ease-in-out"
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name={link.icon} width="28px" height="28px" />
+            </a>
+          ))
+        }
+
+        <p class="pt-8 text-sm"> Made with 🍀 by <a class="font-bold underline-offset-4" href="https://arunava.tech"> Arunava </a> </p>
+        
+      </div>
+    </div>
+  </body>
+</html>
