@@ -1,3 +1,9 @@
+# LinkzIa-v2 Released 🎉🎉
+
+## - Check Here: https://linkzia-v2.vercel.app
+## - Code: https://github.com/its-ag/linkzia-v2/
+
+---
 # LinkZia 🔗 - A Better Links Manager 
 (Idk how this name came to my mind :P)
 
